@@ -1,11 +1,10 @@
 import React from 'react';
-import '../assets/css/clear.css';
 
 const ClearButton = (props) => {
     return (
-        <div className='clear-button'>
+        <button className='clear-button' onClick={props.handleClear}>
             {props.children}
-        </div> 
+        </button> 
     );
 }
  

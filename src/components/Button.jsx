@@ -1,16 +1,17 @@
 import React from 'react';
-import "../assets/css/button.css";
+
 
 
 const Button = (props) => {
 
     const isOperator = (value) => isNaN(value) && (value !== '.') && (value !== '=');
     
-
     return ( 
-        <div className={`container-button ${isOperator(props.children) ? 'operator' : ''}`.trimEnd()} >
+        <button className={`container-button ${isOperator(props.children) ? 'operator' : ''}`.trimEnd()} 
+                onClick={() => props.handleInput(props.children)}>
+
             {props.children}
-        </div>
+        </button>
     );
 }
  

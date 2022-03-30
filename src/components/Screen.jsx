@@ -1,5 +1,4 @@
 import React from 'react';
-import '../assets/css/screen.css';
 
 const Screen = ({input}) => {
     return ( 
